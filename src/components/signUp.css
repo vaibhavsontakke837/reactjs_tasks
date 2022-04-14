@@ -1,0 +1,114 @@
+
+.signin_container{
+    display: flex;
+    align-items: center;
+    
+    width: 95%;
+    margin:  5rem auto;
+    box-shadow: 1px 1px 25px -2px #444444;
+    background: linear-gradient(105deg, rgba(255,255,255,1) 46.9%, rgba(28,83,160,1) 39%);
+
+}
+.logo{
+    color: #265BA4;
+    font-size: 5rem;
+    margin-bottom: -2rem;
+}
+.signUpLeft{
+    margin-left: auto;
+}
+
+.signUpLeft > h1{
+    color: #265BA4;
+}
+.signUpLeft > p{
+    color: black;
+    margin-top: -1rem;
+}
+.title{
+    font-weight: 600;
+}
+.form{
+    height: 25rem;
+    width: 40%;
+    margin: 5rem auto;
+    border-radius:0.3rem ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type="text"] , input[type="password"]{
+    background-color: #F2F2F2;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius:0.3rem ;
+    border: none;
+    outline: none;
+}
+label{
+    margin-left: -1.3rem;
+    width: 8rem !important;
+    color: white;
+}
+::placeholder{
+    color: #6C757D;
+    font-weight: bold;
+}
+.checkBox{
+    display: flex ;
+   width: 50%;
+   margin-left: -2rem;
+}
+
+
+
+.checkBox span {
+    color: #FFFFFF;
+    margin-top: -1.3rem;
+}
+button{
+    background-color: #3598DC;
+    border: none;
+    border-radius:0.3rem ;
+    width: 250px !important;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    opacity: 0.7;
+    width: 40%;
+}
+button:hover{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 850px){
+	.signUpLeft{
+        margin-left: -2px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .signUpLeft{
+        visibility: hidden;
+    }
+    .signin_container{
+            background: linear-gradient(105deg, rgba(28,83,160,1) 46.9%, rgba(28,83,160,1) 39%);
+            box-shadow: none;
+    }
+    .form{
+       margin-left: -9rem;
+    }
+
+
+}
